@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Pasteleria</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/pasteleria.css">
+</head>
+<body>
+    <header>
+        <div class="holder">
+            <img src="images/logo1.png" alt="logo" width="150">
+
+        </div>
+    </header>
+
+    <nav>
+        <ul class="holder">
+            <li> <a class="{{#if isHome}}activo{{/if}}" href="/">Inicio</a></li>
+            <li> <a class="{{#if isNosotros}}activo{{/if}}" href="/nosotros">Nosotros</a></li>
+            <li> <a class="{{#if isProductos}}activo{{/if}}" href="/productos">Productos</a></li>
+            <li> <a  class="{{#if isNovedades}}activo{{/if}}" href="/novedades">Novedades</a></li>
+            <li> <a class="{{#if isContacto}}activo{{/if}}" href="/contacto">Contacto</a></li>
+
+        </ul>
+    </nav>
     {{{body}}}
+    <footer>
+        <p>Diseñado por Agustina-año 2022</p>
+        <i class="fa-brands fa-instagram"></i>
+        <h3>Bakery_cupcakesdeserts</h3>
+
+    </footer>
   </body>
 </html>

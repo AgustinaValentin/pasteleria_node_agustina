@@ -1,0 +1,308 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif; 
+font-family: 'Dancing Script', cursive;*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;/*base*/
+    line-height: 20px;
+
+}
+header{
+    background-color: white;
+    padding: 0; 
+   
+}
+
+nav{
+    background-color: rosybrown;
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0; 
+    display: flex;
+   
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+ nav ul li a:hover{
+background-color: rgba(49, 28, 48, 0.3); 
+} 
+footer{
+    background-color: rosybrown;
+    clear: both; 
+    text-align: center;
+    padding:40px 0;
+    margin-top: 20px;
+}
+nav ul li a.activo{
+ 
+    background-color:rgba(118, 66, 116, 0.3) ; 
+}
+.holder{
+    display: flex;
+    justify-content: center; 
+ 
+}
+
+/*inicio*/
+.variedades{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;   
+   
+}
+.variedades .contenedor{
+    margin: 20px;
+  
+}
+ 
+.contenedor img{   
+position: absolute; 
+border: 0.5px solid #ccc;
+box-shadow: 2px 2px 3px #7f7d7d;
+}
+
+.contenedor img:hover{
+    transform: scale(1.1); 
+ }
+
+.texto{
+   position: relative;
+   text-align: center;
+   transition: all  0.5s ease;
+   transform: scale(1);  
+   opacity: 0;
+}
+
+.texto:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+
+}
+
+.texto h2{
+    text-transform: uppercase;
+    font-family:'Roboto Slab', serif; 
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 50px;
+}
+.texto p{
+    font-family:'Roboto Slab', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 50px;
+    padding: 10px 20px 20px; 
+}
+a.info {
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;  
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+   
+}
+a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.destacados{
+    max-width: 100%;
+    height: 50%;
+    margin-top: 10%;
+}
+.destacados h1{
+    font-family:'Roboto Slab', serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 2%;
+}
+.productos{
+    display: flex;
+    width: 50%;
+    margin-left: 12%; 
+    
+}
+.productos img{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 18%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+footer h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 15;
+    font-style: italic;
+    display: inline-block;
+}
+/*fin de inicio*/
+/*Inicio de Nosotros*/
+
+.nosotros{
+    text-align: center;
+
+}
+
+.nosotros h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color:rosybrown;
+    
+
+}
+.nosotros p{
+    columns: 2;
+    text-align: justify;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.nosotros h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color:rosybrown;
+}
+/*fin de nosotros*/
+/*inicio de productos*/
+
+h2{
+    font-family:'Roboto Slab', serif;
+    text-align: center;
+    color: rgb(200, 78, 78) ;
+    
+   
+}
+
+.gusto{
+    background: #ffffff;
+    background: linear-gradient(338deg,#ffffff 0%, #d7c2cf 80%);
+    background: -webkit-linear-gradient(338deg,#ffffff 0%, #d7c2cf 80%);
+    background: -moz-linear-gradient(338deg,#ffffff 0%, #d7c2cf 80%);
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-left: 10%;
+}
+.gustos{
+    width: 15%;
+    padding: 15px; 
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.gustos:hover{
+    background-color: rgba(118, 66, 116, 0.3);
+}
+
+.gustos:hover h3{
+    color: rosybrown;
+}
+.gustos img{
+    transition: all 0.5s ease;
+    transform:scale(0.9);
+}
+.gustos:hover img{
+    transform: scale(1); 
+}
+/*fin de productos*/
+
+/*inicio de novedades*/
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color:rosybrown;
+    
+}
+
+.novedades h3, h4{
+    margin-left: 1%;
+    font-family:'Roboto Slab', serif; 
+    color: rgb(200, 78, 78) ;
+}
+.novedades p{
+    margin-left: 1%;
+}
+
+
+.contacto{
+    display: flex; 
+}
+.contacto h2{
+   text-align: center;
+}
+.contacto div{
+   /* background-color: yellow;  */
+   /* margin-left: 30%; */
+   width: 100%;
+}
+.formulario{
+margin-left: 7%; 
+}
+.formulario p{
+    font-size: 18px;
+    font-family:'Roboto Slab', serif;
+}
+.formulario p label,
+.formulario p input,
+.formulario p textarea{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40%; 
+    /* min-width: 80px; */
+}
+.formulario p textarea{
+    height:150px ;
+}
+.formulario input[type="submit"]{
+    background: linear-gradient(168deg,#000000 0%, #3e3b3b 80%);
+    color: white;
+    cursor: pointer;
+    /*transition: all  0.5s ease;
+    transform: scale(1);*/ 
+}
+/*.formulario input[type="submit"]:hover{
+    transform: scale(1.1);
+}*/
+.contactanos{
+    margin-left: 100px;
+}
+.contactanos h2{
+text-align: start;
+}
+.contactanos p{
+    text-align: start;
+}
+.contactanos ul li{
+    /* background-color: aqua; */
+    display: flex;
+    text-align: start;
+}
+.contactanos iframe{
+    width: 400px;
+    height: 300px;
+}
+
+
+
+
+
+
