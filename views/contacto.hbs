@@ -1,37 +1,38 @@
  <main class="contacto">
     <div>
         <h2>Contacto</h2>
-            <form action="" class="formulario">
+            <form action="/contacto" method="post" class="formulario">
             <p>
                 <label for="nombre">Nombre</label>
-                <input type="text">
+                <input type="text" name="nombre">
                 
             </p>
             <p>
                 <label for="email">Email</label>
-                <input type="text">
+                <input type="text" name="email">
             </p>
             <p>
                 <label for="telefono">Télefono</label>
-                <input type="text">
+                <input type="text" name="telefono">
             </p>
             <p>
                 <label for="productos">¿Qué productos te interesan?</label>
-                <input type="text">
+                <input type="text" name="intereses">
             </p>
             <p>
                 <label for="info">¿Cómo nos conociste?</label>
-                <input type="text">
+                <input type="text" name="encuesta">
             </p>
             <p>
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id=""></textarea>
+                <textarea name="comentarios" id=""></textarea>
             </p>
             <p>
                 <input type="submit" value="enviar">
             </p>
          
             </form>
+           <p class="mensaje">{{message}}</p>
     </div>
     <div class="contactanos">
         <h2>Contactanos</h2>
