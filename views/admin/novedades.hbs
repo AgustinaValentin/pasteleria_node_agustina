@@ -22,20 +22,26 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Titulo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">precio</th>
+      <th scope="col" class="text-center">cuerpo</th>
       <th scope="col"class="text-end">Acciones</th>
     </tr>
   </thead>
   <tbody>
+    {{#each novedades}}
     <tr>
-      <th scope="row">1</th>
-      <td>titulo</td>
+      <th scope="row">{{id}}</th>
+      <td>{{nombre}}</td>
+      <td>{{precio}}</td>
+      <td>{{cuerpo}}</td>
       <td class="text-end">
         <a href=""class="btn btn-secondary"><i class="fa-solid fa-pencil"></i></a>
         <a href=""class="btn btn-secondary"><i class="fa-solid fa-trash"></i></a>
       </td>
       
     </tr>
+    {{/each}}
   </tbody>
 </table>
     </div>
