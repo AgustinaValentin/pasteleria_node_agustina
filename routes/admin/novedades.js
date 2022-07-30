@@ -19,4 +19,30 @@ router.get ('/agregar', (req, res, next)=> {
   })
 })
 
+router.post('/agregar', async (req, res, next) => {
+  //console.log(req.body)
+  try{
+    if(req.body.nombre != "" && req.body.precio != "" && req.body.cuerpo != ""){
+      await novedadesModel.insertNovedades(req.body)
+      res.redirect ('/admin/novedades')
+    } else{
+      res.render('admin/agregar',{
+        layout:'admin/layout',
+        error:true,
+        message:'completar todos los campos'
+      })
+    }
+
+  }catch(error){
+    console.log(error)
+    res.render ('admin/agregar',{
+      layout:'admin/layout',
+      error:true,
+      message:'No se pudo cargar las novedades'
+    })
+  }
+
+  
+})
+
 module.exports = router;
