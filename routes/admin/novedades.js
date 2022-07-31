@@ -60,4 +60,25 @@ router.get('/modificar/:id', async(req, res, next)=>{
   })
 })
 
+router.post('/modificar', async (req, res, next)=>{
+  try{
+    var obj={
+      nombre:req.body.nombre,
+      precio:req.body.precio,
+      cuerpo:req.body.cuerpo
+    }
+
+    await novedadesModel.modificarNovedadByID(obj, req.body.id);
+    res.redirect('/admin/novedades');
+  }catch(error){
+    console.log(error)
+    res.render ('admin/modificar',{
+      layout:'admin/layout',
+      error:true,
+      message:'No se modifico el producto'
+    })
+
+  }
+})
+
 module.exports = router;

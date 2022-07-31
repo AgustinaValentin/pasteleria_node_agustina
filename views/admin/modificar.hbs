@@ -1,0 +1,30 @@
+<div class="container margen">
+  <div class="row">
+    <div class="col">
+        <h2>Modificar un producto</h2>
+      <form action="/admin/novedades/modificar" method="post">
+      <input type="hidden" value="{{novedad.id}}" name="id">
+        <div class="mb-3">
+            <label for="" class="form-label">nombre</label>
+         <input type="text" class="form-control" value="{{novedad.nombre}}" name="nombre">
+</div>
+  <div class="mb-3">
+    <label for="" class="form-label">precio</label>
+      <textarea class="form-control" rows="3" name="precio">{{novedad.precio}}</textarea>
+ </div>
+ <div class="mb-3">
+    <label for="" class="form-label">cuerpo</label>
+      <textarea class="form-control" rows="3"  name="cuerpo">{{novedad.cuerpo}}</textarea>
+ </div>
+ <div class="col-auto">
+    <button type="submit" class="btn btn-secondary">Modificar</button>
+
+ </div>
+    </form>
+    {{#if error}}
+    <p>{{message}}</p>
+    {{/if}}
+     
+    </div>
+  </div>
+</div>>    
